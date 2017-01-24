@@ -5,6 +5,8 @@ import { render } from 'react-dom'
 import routes from './routes'
 
 render(
-	<Router history={browserHistory} routes={routes}/>,
+	<Router history={browserHistory}>
+		{routes}
+	</Router>,
 	 document.getElementById('app')
 );
