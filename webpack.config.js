@@ -12,7 +12,7 @@ module.exports = {
     
     context: __dirname,
     entry: {
-        app: './assets/index',
+        app: './assets/js/index',
         // vendor: Object.keys(require('./package.json').dependencies)
     }, 
     
@@ -35,7 +35,7 @@ module.exports = {
         rules: [
             {
                 test: /\.jsx?$/, 
-                include: path.resolve(__dirname, './assets/'),
+                include: path.resolve(__dirname, './assets/js/'),
                 exclude: /node_modules/, 
                 loader: 'babel-loader',
                 
