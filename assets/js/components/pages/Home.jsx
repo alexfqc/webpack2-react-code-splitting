@@ -2,9 +2,8 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const About = () => (
-	<div>
-		<Link to='/about'>About</Link>
-		<Link to='/blog'>Blog</Link>
+	<div className='col-xs-12'>
+		<h1>Home</h1>
 	</div>
 );
 

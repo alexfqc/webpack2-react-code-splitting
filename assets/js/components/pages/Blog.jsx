@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router'
 
 const Blog = () => (
-	<div>
-		<div>Blog</div>
-		<Link to='/'>Home</Link>
+	<div className='col-xs-12'>
+		<h1>Blog</h1>
 	</div>
 );
 
