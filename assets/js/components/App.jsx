@@ -14,13 +14,13 @@ const App = (props) => {
 				break
 	}
 	const style = {
-					'background-color': color,
+					'backgroundColor': color,
 					'height': '100%',
 					'position': 'absolute'
 				};
 	return(
 		<div className='col-xs-12' style={style}>
-			<Menu />
+			<Menu color={color}/>
 			{props.children}
 		</div>
 	);

@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const Menu = () => {
-	const url = window.location.pathname;
+const Menu = ({color}) => {
+	const url = window.location.pathname,
+		  style = { color }
+	console.log(style);
 	return (
 		<nav className="navbar navbar-default">
 		  <div className="container-fluid">
@@ -14,10 +16,10 @@ const Menu = () => {
 		    <div className="collapse navbar-collapse">
 		    	<ul className="nav navbar-nav">
 		        	<li className={url === '/about' ? 'active' : ''}>
-		        		<Link to='/about'>About</Link>
+		        		<Link to='/about' style={url === '/about' ? style : {}}>About</Link>
 		        	</li>
 		        	<li className={url === '/blog' ? 'active' : ''}>
-		        		<Link to='/blog'>Blog</Link>
+		        		<Link to='/blog' style={url === '/blog' ? style : {}}>Blog</Link>
 		        	</li>
 		        </ul>
 		    </div>
